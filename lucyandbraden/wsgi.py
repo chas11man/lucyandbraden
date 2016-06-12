@@ -8,7 +8,7 @@ https://docs.djangoproject.com/en/1.9/howto/deployment/wsgi/
 """
 
 import os
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "mysite.settings")
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "lucyandbraden.settings")
 
 import django.core.handlers.wsgi
 application = django.core.handlers.wsgi.WSGIHandler()
