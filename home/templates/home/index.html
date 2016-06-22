@@ -1,1 +1,36 @@
-<h1>Lucy and Braden are getting married!!!</h1>
+{% load staticfiles %}
+
+<html>
+    <head>
+        <title>Lucy and Braden's Wedding</title>
+        <style type="text/css">
+            body {
+                background-color: #B5B9FF;
+            }
+
+            h1 {
+                text-align: center;
+            }
+
+            .center-block {
+                width: 90%;
+                margin: auto;
+                background-color: white;
+                padding: 10px;
+            }
+
+            .center-block img {
+                display: block;
+                margin: auto;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Lucy and Braden are getting married!!!</h1>
+        <div class="center-block">
+            <h1>Stuff goes here</h1>
+            <img src="{% static "home/jekyll.jpg" %}">
+        </div>
+    </body>
+</html>
