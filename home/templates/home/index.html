@@ -30,10 +30,24 @@
                 width: 100%;
                 border-radius: 15px;
             }
+
+            .blossom {
+                width: 20%;
+            }
+
+            .floatleft {
+                float: left;
+            }
+
+            .floatright {
+                float: right;
+            }
         </style>
     </head>
 
     <body>
+        <img class="blossom floatleft" src="{% static "home/cherry_blossom_left.png" %}">
+        <img class="blossom floatright" src="{% static "home/cherry_blossom_right.png" %}">
         <p class="header">Lucy and Braden</p>
         <div class="center-block">
             <img src="{% static "home/jekyll.jpg" %}">
