@@ -1,0 +1,37 @@
+body {
+    background-color: #B5B9FF;
+    text-align: center;
+    font-family: 'Petit Formal Script', cursive;
+    color: linen;
+}
+
+.header {
+    font-size: 52px;
+    margin: 15px;
+    font-weight: bold;
+}
+
+.center-block {
+    width: 85%;
+    margin: auto;
+    background-color: linen;
+    padding: 30px;
+    border-radius: 30px;
+}
+
+.center-block img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.blossom {
+    width: 20%;
+}
+
+.floatleft {
+    float: left;
+}
+
+.floatright {
+    float: right;
+}

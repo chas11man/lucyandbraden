@@ -1,56 +1,23 @@
 {% load staticfiles %}
-
 <html>
-    <head>
-        <title>Lucy and Braden's Wedding</title>
-        <link href='https://fonts.googleapis.com/css?family=Petit+Formal+Script' rel='stylesheet' type='text/css'>
-        <style type="text/css">
-            body {
-                background-color: #B5B9FF;
-                text-align: center;
-                font-family: 'Petit Formal Script', cursive;
-                color: linen;
-            }
 
-            .header {
-                font-size: 52px;
-                margin: 15px;
-                font-weight: bold;
-            }
+<head>
+    <title>Lucy and Braden's Wedding</title>
+    <link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Petit+Formal+Script'>
+    <link rel="stylesheet" type="text/css" href="{% static 'home/style.css' %}">
+</head>
 
-            .center-block {
-                width: 85%;
-                margin: auto;
-                background-color: linen;
-                padding: 30px;
-                border-radius: 30px;
-            }
-
-            .center-block img {
-                width: 100%;
-                border-radius: 15px;
-            }
-
-            .blossom {
-                width: 20%;
-            }
-
-            .floatleft {
-                float: left;
-            }
-
-            .floatright {
-                float: right;
-            }
-        </style>
-    </head>
-
-    <body>
-        <img class="blossom floatleft" src="{% static "home/cherry_blossom_left.png" %}">
-        <img class="blossom floatright" src="{% static "home/cherry_blossom_right.png" %}">
-        <p class="header">Lucy and Braden</p>
-        <div class="center-block">
-            <img src="{% static "home/jekyll.jpg" %}">
+<body>
+    <div class="header">
+        <img class="blossom floatleft" src="{% static 'home/cherry_blossom_left.png' %}">
+        <img class="blossom floatright" src="{% static 'home/cherry_blossom_right.png' %}">
+        <div>
+            <p>Lucy and Braden</p>
         </div>
-    </body>
+    </div>
+    <div class="center-block">
+        <img src="{% static 'home/jekyll.jpg' %}">
+    </div>
+</body>
+
 </html>
