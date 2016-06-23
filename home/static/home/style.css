@@ -1,8 +1,8 @@
 body {
-    background-color: #B5B9FF;
+    background-color: linen;
     text-align: center;
     font-family: 'Petit Formal Script', cursive;
-    color: linen;
+    color: gray;
 }
 
 .header {
@@ -14,7 +14,7 @@ body {
 .center-block {
     width: 85%;
     margin: auto;
-    background-color: linen;
+    background-color: peachpuff;
     padding: 30px;
     border-radius: 30px;
 }
