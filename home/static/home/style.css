@@ -5,6 +5,19 @@ body {
     color: gray;
 }
 
+a {
+    color: gray;
+    text-decoration: none;
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+a.active {
+    font-weight: bold;
+}
+
 .header {
     font-size: 52px;
     margin: 15px;
@@ -34,4 +47,10 @@ body {
 
 .floatright {
     float: right;
+}
+
+.links {
+    margin: 20px 15%;
+    display: flex;
+    justify-content: space-between;
 }

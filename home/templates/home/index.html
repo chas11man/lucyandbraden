@@ -5,6 +5,8 @@
     <title>Lucy and Braden's Wedding</title>
     <link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Petit+Formal+Script'>
     <link rel="stylesheet" type="text/css" href="{% static 'home/style.css' %}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript" src="{% static 'home/script.js' %}"></script>
 </head>
 
 <body>
@@ -15,8 +17,25 @@
             <p>Lucy and Braden</p>
         </div>
     </div>
+    <div class="links">
+        <a href="#" class="pageLink active" onclick="showPage(event, 'home')">Home</a>
+        <a href="#" class="pageLink" onclick="showPage(event, 'schedule')">Schedule and Venues</a>
+        <a href="#" class="pageLink" onclick="showPage(event, 'hotel')">Hotel Information</a>
+        <a href="#" class="pageLink" onclick="showPage(event, 'registry')">Registries</a>
+    </div>
     <div class="center-block">
-        <img src="{% static 'home/jekyll.jpg' %}">
+        <div id="home" class="pageContent" style="display: block;">
+            <img src="{% static 'home/jekyll.jpg' %}">
+        </div>
+        <div id="schedule" class="pageContent" style="display: none;">
+            This is the Schedule
+        </div>
+        <div id="hotel" class="pageContent" style="display: none;">
+            Here's the Hotel
+        </div>
+        <div id="registry" class="pageContent" style="display: none;">
+            What to buy us
+        </div>
     </div>
 </body>
 
