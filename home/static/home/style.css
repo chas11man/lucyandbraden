@@ -3,6 +3,8 @@ body {
     text-align: center;
     font-family: 'Petit Formal Script', cursive;
     color: gray;
+    max-width: 1000px;
+    margin: auto;
 }
 
 a {
