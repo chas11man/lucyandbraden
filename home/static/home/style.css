@@ -1,15 +1,23 @@
 body {
     background-color: linen;
     text-align: center;
-    font-family: 'Petit Formal Script', cursive;
     color: gray;
     max-width: 1000px;
     margin: auto;
+    font-family: 'Martel Sans', sans-serif;
 }
 
 a {
+    font-family: 'Petit Formal Script', cursive;
     color: gray;
+}
+
+.links a {
     text-decoration: none;
+}
+
+.center-block a {
+    font-size: 22px;
 }
 
 a:hover {
@@ -24,6 +32,7 @@ a.active {
     font-size: 52px;
     margin: 15px;
     font-weight: bold;
+    font-family: 'Petit Formal Script', cursive;
 }
 
 .center-block {
