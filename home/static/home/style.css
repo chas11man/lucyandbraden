@@ -70,4 +70,5 @@ a.active {
 
 #map {
     height: 500px;
+    border-radius: 15px;
 }
