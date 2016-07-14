@@ -67,3 +67,7 @@ a.active {
     display: flex;
     justify-content: space-between;
 }
+
+#map {
+    height: 500px;
+}
