@@ -14,27 +14,30 @@
         <img class="blossom floatleft" src="{% static 'home/cherry_blossom_left.png' %}">
         <img class="blossom floatright" src="{% static 'home/cherry_blossom_right.png' %}">
         <div>
-            <p>Lucy and Braden</p>
+            <p style="padding: .5em 0;">Lucy and Braden</p>
         </div>
     </div>
     <div class="links">
         <a href="#" class="pageLink active" onclick="showPage(event, 'home')">Home</a>
         <a href="#" class="pageLink" onclick="showPage(event, 'schedule')">Schedule and Venues</a>
-        <a href="#" class="pageLink" onclick="showPage(event, 'hotel')">Hotel Information</a>
+        <a href="#" class="pageLink" onclick="showPage(event, 'hotel')">Accommodations and Activities</a>
         <a href="#" class="pageLink" onclick="showPage(event, 'registry')">Registries</a>
     </div>
     <div class="center-block">
         <div id="home" class="pageContent" style="display: block;">
-            <p>Welcome to our wedding website!<br>
-            Please save the date for Saturday, April 1, 2017 in Washington, DC</p>
+            <h1>Welcome to our wedding website!</h1>
+            <p>Please save the date for Saturday, April 1, 2017 in Washington, DC</p>
             <img src="{% static 'home/jekyll.jpg' %}">
         </div>
         <div id="schedule" class="pageContent" style="display: none;">
             <p>Details still to come. Please check back later.</p>
         </div>
         <div id="hotel" class="pageContent" style="display: none;">
+            <h1>Accommodations</h1>
             <p>Hotel rooms are being held for the nights of Friday, March 31 and Saturday, April 1 at the Kimpton Hotel Palomar, a few blocks from the church and reception and near Dupont Circle in Washington, DC. Please contact the hotel before March 1, 2017 and ask for the Alexander & Murphy wedding, to get the wedding rate. If you'd like to stay longer, just let them know and they will likely extend the rate for the extra nights. You can call them at 877-866-3070 in the US, or book online at the link below, or access the Kimpton Hotel Palomar Washington DC website and use meeting number 11420107278 when you book your room for these nights.</p>
             <a href="https://gc.synxis.com/rez.aspx?Hotel=26732&Chain=10179&arrive=3/31/2017&depart=4/2/2017&adult=1&child=0&group=11420107278" target="_blank">Kimpton Hotel Palomar</a>
+            <h1>Activities</h1>
+            <p>Washington is a wonderful place to visit with children -- there are numerous Smithsonian museums on the National Mall covering natural history, American history, air & space, and much more. The historic sights landmarks of the White House, Washington Monument, Lincoln and Jefferson memorials. Paddle boats on the Tidal Basin, the National Zoo, the kid-oriented Spy Museum.  We'd love for families to make it a family holiday and we'd be delighted to arrange childcare and activities for children on the day of the wedding.  Please let us know and we can send more information.</p>
         </div>
         <div id="registry" class="pageContent" style="display: none;">
             <p>Details still to come. Please check back later.</p>

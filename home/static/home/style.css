@@ -14,6 +14,8 @@ a {
 
 .links a {
     text-decoration: none;
+    font-size: 1.25em;
+    padding: 15px;
 }
 
 .center-block a {
@@ -29,8 +31,8 @@ a.active {
 }
 
 .header {
-    font-size: 52px;
-    margin: 15px;
+    font-size: 3em;
+    margin: .5em auto;
     font-weight: bold;
     font-family: 'Petit Formal Script', cursive;
 }
@@ -49,7 +51,7 @@ a.active {
 }
 
 .blossom {
-    width: 20%;
+    height: 2.25em;
 }
 
 .floatleft {
@@ -61,7 +63,7 @@ a.active {
 }
 
 .links {
-    margin: 20px 15%;
+    margin: 20px 10%;
     display: flex;
     justify-content: space-between;
 }
