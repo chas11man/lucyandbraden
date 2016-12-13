@@ -46,6 +46,7 @@
                 lat: 38.910111,
                 lng: -77.047335
             };
+            var infoWindowList = [];
 
             function initMap() {
                 map = new google.maps.Map(document.getElementById('map'), {
@@ -64,6 +65,8 @@
                 };
                 var churchServ = new google.maps.places.PlacesService(map);
                 churchServ.getDetails(churchReq, callback);
+
+                map.addListener('click', closeAllInfoWindows);
             }
 
             function callback(place, status) {
@@ -85,8 +88,17 @@
                     });
 
                     marker.addListener('click', function() {
+                        closeAllInfoWindows();
                         infoWindow.open(map, marker);
                     });
+
+                    infoWindowList.push(infoWindow);
+                }
+            }
+
+            function closeAllInfoWindows() {
+                for (var i = infoWindowList.length - 1; i >= 0; i--) {
+                    infoWindowList[i].close();
                 }
             }
             </script>
