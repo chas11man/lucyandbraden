@@ -113,8 +113,9 @@
 
                     var infoWinContent =
                         '<h1>' + place.name + '</h1>' +
-                        '<p>' + place.formatted_address + '<br>' +
-                        place.formatted_phone_number + '</p>';
+                        '<p>' + place.formatted_address +
+                        '<br>' + place.formatted_phone_number + '</p>' +
+                        '<img src="' + place.photos[0].getUrl({'maxWidth': 400}) + '" style="width:200px;">';
 
 
                     var infoWindow = new google.maps.InfoWindow({
